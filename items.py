@@ -13,6 +13,6 @@ class Menu_Items:
         }
 
     def loopy(self):
-        # looping function that prints out the available items and their price.
+        # Iterating over dictionary which prints out the items and their price.
         for key, val in self.menu_items.items(): # selecting both key and value pair when looping.
             print(key + ':', val)
