@@ -17,7 +17,6 @@ class Client_Order(Menu_Items):
         elif view_menu[0].lower() == "n":
             print("Well get out then....")
 
-
     def choose_items(self):
         # empty list which will fill up when the user choose items of the menu.
         client_choice = []
@@ -32,7 +31,15 @@ class Client_Order(Menu_Items):
             # if function checks to see that what has been typed/selected is in the list. if is it will append it to the client choice list.
             if choice in self.menu_items.keys():
                 client_choice.append(choice)
+
+        # Iterating over the Clients choices
+        for i in client_choice:
+            print("\n- The client has chosen: " + i)
+
+        # List of the items the waiter will need to provide
+        print("\nThese are the orders you will need to get for the client:")
         return client_choice
+
 
 if __name__ == "__main__":
     order1 = Client_Order()
