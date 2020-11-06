@@ -35,6 +35,6 @@ class Client_Order(Menu_Items):
         return client_choice
 
 if __name__ == "__main__":
-    eman = Client_Order()
-    eman.see_menu()
-    print(eman.choose_items())
+    order1 = Client_Order()
+    order1.see_menu()
+    print(order1.choose_items())
