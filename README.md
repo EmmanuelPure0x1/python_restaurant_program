@@ -6,7 +6,7 @@ Complete the ```User stories``` below.
 
 ### User Stories
 Task: 1
-* ```As a user, I want to be able to see the menu in a formated way, so that I can order my meal.```
+* As a user, I want to be able to see the menu in a formatted way, so that I can order my meal.
 ```python
 class Menu_Items:
     def __init__(self):
@@ -29,7 +29,7 @@ class Menu_Items:
 ```
 
 Task: 2
-* ```As a user, I want to be able to order 3 items, and have my responses added to a list so they aren't forgotten.```
+* As a user, I want to be able to order 3 items, and have my responses added to a list so they aren't forgotten.
 ```python
     def choose_items(self):
         # empty list which will fill up when the user choose items of the menu.
@@ -49,4 +49,14 @@ Task: 2
 ```
 
 Task: 3
-* ``` As a user, I want to have my order read back to me in formated way so I know what I ordered.```
+* As a user, I want to have my order read back to me in formatted way so I know what I ordered.
+
+```python
+ # Iterating over the Clients choices
+        for i in client_choice:
+            print("\n- The client has chosen: " + i)
+
+        # List of the items the waiter will need to provide
+        print("\nThese are the orders you will need to get for the client:")
+        return client_choice
+```
